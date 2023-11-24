@@ -16,7 +16,8 @@ def divide(x, y):
 
 
 def square(x, y):
-    return x*x, y*y
+    return x ** 2
+    return y ** 2
     
 print("Select operation.")
 print("1.Add")
@@ -54,8 +55,8 @@ while True:
             print(num1, "/", num2, "=", divide(num1, num2))
         
         elif choice == '5':
-            print(num1, "*", num1, "=", square(num1, num1))
-            print(num2, "*", num2, "=", square(num2, num2))
+            print(num1, "**", 2, "=", square(num1, num1))
+            print(num2, "**", 2, "=", square(num2, num2))
 
 
         next_calculation = input("Let's do next calculation? (yes/no): ")
