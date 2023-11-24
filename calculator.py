@@ -29,8 +29,7 @@ print("q to exit")
 while True:
     
     choice = input("Enter choice(1/2/3/4/5/q): ")
-    choice = input("Give me an operator or \"exit\" to stop : ")
-
+    
     if choice == "q":
         break
 
