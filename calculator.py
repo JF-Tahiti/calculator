@@ -1,3 +1,5 @@
+import math
+
 
 def add(x, y):
     return x + y
@@ -16,8 +18,10 @@ def divide(x, y):
 
 
 def square(x, y):
-    return x ** 2
-    return y ** 2
+    return x*x, y*y
+
+def squareROOT(x):
+    return math.sqrt(x)
     
 print("Select operation.")
 print("1.Add")
@@ -25,16 +29,17 @@ print("2.Subtract")
 print("3.Multiply")
 print("4.Divide")
 print("5.Square")
+print("6.SquareRoot")
 print("q to exit")
 
 while True:
     
-    choice = input("Enter choice(1/2/3/4/5/q): ")
+    choice = input("Enter choice(1/2/3/4/5/6/q): ")
     
     if choice == "q":
         break
 
-    if choice in ('1', '2', '3', '4', '5'):
+    if choice in ('1', '2', '3', '4', '5', '6'):
         try:
             num1 = int(input("Enter first number: "))
             num2 = int(input("Enter second number: "))
@@ -57,6 +62,10 @@ while True:
         elif choice == '5':
             print(num1, "**", 2, "=", square(num1, num1))
             print(num2, "**", 2, "=", square(num2, num2))
+
+        elif choice == '6':
+            print (math.sqrt(num1))
+            print (math.sqrt(num2))
 
 
         next_calculation = input("Let's do next calculation? (yes/no): ")
