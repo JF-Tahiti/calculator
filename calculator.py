@@ -18,7 +18,8 @@ def divide(x, y):
 
 
 def square(x, y):
-    return x*x, y*y
+    return x ** 2
+    return y ** 2
 
 def squareROOT(x):
     return math.sqrt(x)
@@ -65,10 +66,19 @@ while True:
 
         elif choice == '6':
             print (math.sqrt(num1))
-            print (math.sqrt(num2))
-
-
+            
         next_calculation = input("Let's do next calculation? (yes/no): ")
+        
+        if next_calculation == "yes":
+            print("Select operation.")
+            print("1.Add")
+            print("2.Subtract")
+            print("3.Multiply")
+            print("4.Divide")
+            print("5.Square")
+            print("6.SquareRoot")
+            print("q to exit")
+        
         if next_calculation == "no":
           break
     else:
