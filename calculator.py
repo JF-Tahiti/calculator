@@ -25,12 +25,12 @@ def squareROOT(x):
     return math.sqrt(x)
     
 print("Select operation.")
-print("1.Add")
-print("2.Subtract")
-print("3.Multiply")
-print("4.Divide")
-print("5.Square")
-print("6.SquareRoot")
+print("1.Add"+"+")
+print("2.Subtract"+"(+)")
+print("3.Multiply"+"(-)")
+print("4.Divide"+"(/)")
+print("5.Square"+"(²)")
+print("6.SquareRoot"+"(√)")
 print("q to exit")
 
 while True:
